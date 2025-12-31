@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Our Space</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+
+<style>
+body{
+  margin:0;
+  height:100vh;
+  font-family:'Patrick Hand', cursive;
+  background:linear-gradient(135deg,#ffd6e0,#fff0d6,#e8dfff);
+  color:#5a3a4a;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+p{max-width:650px; line-height:1.7;}
+
+button{
+  background:#ffd6e0;
+  border:none;
+  padding:12px 26px;
+  border-radius:25px;
+  font-size:1.1em;
+  margin:10px;
+  cursor:pointer;
+  transition:transform .2s;
+}
+button:hover{transform:scale(1.1);}
+</style>
+</head>
+
+<body>
+
+<h1>Hey, you made it here 💛</h1>
+
+<p>
+Welcome to our little pastel world 🤍.<br><br>
+If you’re reading this, you’re officially part of our little<br>
+universe. This little corner of the internet belongs to us.<br>
+No matter where life takes us, this will always be our safe<br>
+place (ofc only if u want it).Its not js a page, its a piece of us.
+</p>
+
+<p><b>wanna see what comes next??</b></p>
+
+<button onclick="goYes()">Yes</button>
+<button onclick="goNo()">No</button>
+
+<script>
+function goYes(){window.location.href="yes.html";}
+function goNo(){window.location.href="no.html";}
+</script>
+
+</body>
+</html>
