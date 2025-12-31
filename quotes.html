@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>soft thoughts</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Patrick Hand', cursive;
+  background: linear-gradient(135deg, #ffd6e0, #d6f0ff, #fff0d6);
+  color: #5a3a4a;
+  overflow-x: hidden;
+}
+
+section {
+  min-height: 100vh;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1em;
+  opacity: 0.8;
+  margin-bottom: 30px;
+}
+
+/* FLOATING QUOTES */
+.quote-area {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+  max-width: 600px;
+  width: 100%;
+}
+
+.quote {
+  background: rgba(255,255,255,0.85);
+  padding: 14px 18px;
+  border-radius: 16px;
+  font-size: 1.05em;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+/* BUTTON */
+button {
+  margin-top: 35px;
+  background: #ffb6c1;
+  border: none;
+  padding: 12px 26px;
+  border-radius: 25px;
+  font-size: 1.05em;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #ffa6b9;
+}
+</style>
+</head>
+
+<body>
+
+<section>
+  <h1>words you can come back to</h1>
+  <p class="subtitle">read slowly. or don’t. they’ll wait.</p>
+
+  <div class="quote-area">
+    <div class="quote">Some people feel like home, even when everything else feels unfamiliar.</div>
+    <div class="quote">You are allowed to take up space gently.</div>
+    <div class="quote">Nothing is wrong with you for needing softness.</div>
+    <div class="quote">Even slow days are still days lived.</div>
+    <div class="quote">You don’t owe the world your constant strength.</div>
+    <div class="quote">There are parts of you that are healing even when you don’t notice.</div>
+    <div class="quote">You’re doing better than your doubts let you believe.</div>
+
+    <!-- extra soft ones (optional but matching vibe) -->
+    <div class="quote">Rest is allowed here.</div>
+    <div class="quote">You don’t have to explain your tiredness.</div>
+  </div>
+
+  <button onclick="window.location.href='after-quotes.html'">
+    stay a little longer
+  </button>
+</section>
+
+</body>
+</html>
