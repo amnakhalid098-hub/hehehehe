@@ -40,6 +40,21 @@ button {
   border-radius: 25px;
   cursor: pointer;
 }
+
+/* hidden message styles */
+.secret-trigger {
+  margin-top: 40px;
+  font-size: 0.95em;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.secret {
+  display: none;
+  margin-top: 20px;
+  font-size: 1.05em;
+  line-height: 1.7;
+}
 </style>
 </head>
 
@@ -62,6 +77,30 @@ button {
   <button onclick="window.location.href='index.html'">
     go back to the beginning
   </button>
+
+  <!-- hidden message trigger -->
+  <div class="secret-trigger" onclick="toggleSecret()">
+    you stayed till the end… so here’s something for you.
+  </div>
+
+  <!-- hidden message -->
+  <div class="secret" id="secretMsg">
+    i don’t know what the future looks like, but i know i want you in it.  
+    even if our paths change, i hope we will always find our way back to each other.  
+    no matter how loud the world gets, you’ll always be quiet comfort to me.  
+    <br><br>
+    and this wasn’t just a website.  
+    it was me choosing you, gently.
+  </div>
+
 </section>
+
+<script>
+function toggleSecret() {
+  const msg = document.getElementById("secretMsg");
+  msg.style.display = msg.style.display === "block" ? "none" : "block";
+}
+</script>
+
 </body>
 </html>
