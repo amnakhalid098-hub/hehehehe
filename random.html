@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>random corner</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Patrick Hand', cursive;
+  background: linear-gradient(135deg, #ffd6e0, #d6f0ff, #fff0d6);
+  color: #5a3a4a;
+}
+
+section {
+  min-height: 100vh;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1em;
+  opacity: 0.8;
+  margin-bottom: 30px;
+}
+
+button {
+  background: #ffb6c1;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-size: 1.05em;
+  cursor: pointer;
+  margin: 8px;
+}
+
+button:hover {
+  background: #ffa6b9;
+}
+
+.hidden {
+  display: none;
+  margin-top: 15px;
+  max-width: 500px;
+  font-size: 1.05em;
+}
+
+/* doodle placeholder */
+.doodle {
+  width: 120px;
+  margin-bottom: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<section>
+
+  <!-- doodle goes here later -->
+  <!-- <img src="doodle.png" class="doodle"> -->
+
+  <h1>random corner</h1>
+  <p class="subtitle">press things. nothing bad will happen.</p>
+
+  <button onclick="toggle('one')">open when you feel silly</button>
+  <p id="one" class="hidden">
+    life is weird. you’re weird. somehow it works.  
+    please never stop being like this.
+  </p>
+
+  <button onclick="toggle('two')">open when you miss someone</button>
+  <p id="two" class="hidden">
+    missing someone means they mattered.  
+    that’s not a weakness. that’s proof.
+  </p>
+
+  <button onclick="toggle('three')">press this for no reason</button>
+  <p id="three" class="hidden">
+    congrats. you followed instructions perfectly.  
+    proud of you.
+  </p>
+
+  <button onclick="window.location.href='promises.html'">
+  lets go to the next page →
+</button>
+
+</section>
+
+<script>
+function toggle(id) {
+  const el = document.getElementById(id);
+  el.style.display = el.style.display === "block" ? "none" : "block";
+}
+</script>
+
+</body>
+</html>
